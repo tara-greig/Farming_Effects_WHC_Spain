@@ -5,7 +5,11 @@ Repo use:
 
 The file <Greig_Project.ipynb> contains the script and model that projects soil water holding.
 
-All the other files (sans standard git/git hub files) contain the data used by the script. Due to file size, importing the data was difficult. Files were taken out of their hierarchical directory, so please be sure to amend paths for the data when running the script (all file names are consistent though).
+All the other files (sans standard git/git hub files) contain data necessary for the script. Due to some datas' file size, they have not been pushed to this repo. Please see the following web addresses to get other necessary data. Also, all files were taken out of their hierarchical directory during the project, so please be sure to amend paths for the data when running the script (all file names are consistent though).
+
+Spain Boundary shape file: https://international.ipums.org/international/gis.shtml
+European top soil bulk density raster:https://esdac.jrc.ec.europa.eu/content/european-soil-database-derived-data
+WHC raster: https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/use/worldsoils/?cid=nrcs142p2_054022
 
 Model framework:
 
@@ -14,4 +18,4 @@ On lands currently conventionally tilled, increase whc by a factor derived from 
 
 Limitations:
 
-Projection represents saturated soil water holding, not elevated field capacity. Zero-tillage statistic taken from limited studies without variability estimates. WHC within top 30cm of soils only. WHC data lack accuracy and granularity, wide ranges used to construct projected intervals.
+Projection represents saturated soil water holding, not elevated field capacity. Zero-tillage statistic taken from limited studies without variability estimates. WHC within top 30cm of soils only. WHC and agricultural data lack accuracy and granularity, wide ranges used to construct projected intervals.
